@@ -30,7 +30,12 @@ p {
 }
 
 .page-header {
+  background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  position: relative;
+  z-index: 10;
 }
 
 .page-header li a {
@@ -135,9 +140,11 @@ ol {
   color: #4d5ae5;
 }
 
-.hero {
-  background-color: #2e2f42;
+.hero-bg {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 188px 0;
+  background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -176,7 +183,9 @@ ol {
   border-radius: 4px;
   padding: 16px 32px;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -284,8 +293,8 @@ img {
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   transform: scale(1.75);
   fill: #f4f4fd;
 }
@@ -297,7 +306,8 @@ img {
   border-radius: 0 0 4px 4px;
   overflow: hidden;
   text-align: center;
-  box-shadow: 0px 1px 1px rgba(46, 47, 66, 0.16);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list {
@@ -423,7 +433,7 @@ img {
 
 .page-footer .container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   gap: 120px;
 }
 
