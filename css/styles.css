@@ -443,13 +443,24 @@ img {
 
 .footer-text {
   max-width: 264px;
-  margin-top: 16px;
+  margin: 0;
 }
 
 .footer-social {
   display: flex;
   flex-direction: column;
   order: 2;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-social .social-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .footer-social-text {
